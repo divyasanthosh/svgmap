@@ -16,5 +16,5 @@ app.get('/svg', function(req , res){
 	res.sendFile(__dirname + '/svg.html');
 });
 
-  app.listen(8085);
+  app.listen(process.env.PORT || 8085);
  
